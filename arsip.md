@@ -1,10 +1,16 @@
 ---
 layout: default
-title: Arsip Artikel
+title: "Arsip Artikel"
 permalink: /arsip/
 ---
 # Arsip Artikel
 
-{% for post in site.posts %}
-<div class="archive-item"><time>{{ post.date | date: "%d-%m-%Y" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+Temukan seluruh artikel INFOKILAS berdasarkan bulan penerbitan.
+
+{% assign archive_groups = site.posts | group_by_exp: 'post', "post.date | date: '%Y-%m'" %}
+{% for group in archive_groups %}
+## <span id="bulan-{{ group.name }}">{{ group.items.first.date | date: '%B %Y' }}</span>
+{% for post in group.items %}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: '%d-%m-%Y' }}
+{% endfor %}
 {% endfor %}

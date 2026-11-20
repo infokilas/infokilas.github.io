@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Beranda"
+description: "INFOKILAS menyajikan berita dan artikel terbaru tentang teknologi, tren, budaya, dan dunia digital."
+---
+<section class="intro"><h1>Selamat Datang di INFOKILAS</h1><p>INFOKILAS adalah portal informasi yang menyajikan berita dan artikel terbaru.</p><p>Temukan berbagai informasi menarik seputar teknologi, bisnis, ekonomi, dan perkembangan dunia digital.</p></section>
+{% assign featured = site.posts.first %}
+{% if featured %}
+<section class="highlight" aria-label="Sorotan utama"><div class="highlight-heading"><span class="tiles-icon" aria-hidden="true">▦</span> HIGHLIGHT</div><div class="highlight-content"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a><span class="highlight-dot" aria-hidden="true">●</span></div></section>
+{% endif %}
+<div class="content-columns"><section class="latest"><h2>Artikel Terbaru</h2><div class="article-grid">{% for post in site.posts limit:12 %}<article class="article-card"><a href="{{ post.url | relative_url }}" class="card-link">{% if post.image %}<img class="card-image" src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy" width="600" height="338">{% else %}<div class="card-placeholder">INFOKILAS</div>{% endif %}<div class="card-content"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d-%m-%Y' }}</time><h3>{{ post.title }}</h3><p>{{ post.description | default: post.excerpt | strip_html | truncate: 110 }}</p></div></a></article>{% endfor %}</div>{% if site.posts.size == 0 %}<p>Artikel terbaru akan segera hadir.</p>{% endif %}<a class="all-articles" href="{{ '/arsip/' | relative_url }}">Lihat Semua Artikel →</a></section>
+<aside class="archive-panel"><h2>Arsip Artikel</h2><div class="archive-rule"></div>{% assign archive_groups = site.posts | group_by_exp: 'post', "post.date | date: '%Y-%m'" %}{% for group in archive_groups %}{% assign first_post = group.items.first %}<a class="archive-row" href="{{ '/arsip/' | relative_url }}#bulan-{{ group.name }}"><span>{{ first_post.date | date: '%B %Y' }}</span><small>({{ group.items.size }} artikel)</small></a>{% endfor %}{% if archive_groups.size == 0 %}<p>Belum ada arsip.</p>{% endif %}<a class="archive-button" href="{{ '/arsip/' | relative_url }}">Lihat Semua Arsip →</a></aside></div>
