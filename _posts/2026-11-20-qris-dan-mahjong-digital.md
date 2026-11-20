@@ -5,7 +5,7 @@ date: 2026-11-20 15:00:00 +0700
 categories: [General]
 description: "Mengenal perkembangan QRIS dan mahjong digital serta pengaruh teknologi pembayaran terhadap ekosistem hiburan modern."
 image: "/assets/images/banner-mahjong1.jpg"
-author: "Tim Redaksi INFOKILAS"
+author: "INFOKILAS"
 hide_buttons: true
 ---
 
