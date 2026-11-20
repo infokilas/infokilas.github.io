@@ -1,0 +1,6 @@
+---
+layout: default
+title: Artikel
+permalink: /artikel/
+---
+<section class="section"><div class="section-heading"><h1>Semua Artikel</h1></div><div class="post-grid">{% for post in site.posts %}<a class="post-card" href="{{ post.url | relative_url }}"><div class="thumb">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">{% endif %}</div><div class="card-body"><h3>{{ post.title }}</h3><p>{{ post.description }}</p></div></a>{% endfor %}</div></section>
