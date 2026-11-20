@@ -1,0 +1,28 @@
+
+title: "INFOKILAS"
+description: "Portal berita, informasi, teknologi, dan hiburan digital terkini."
+url: "https://infokilas.github.io"
+baseurl: ""
+lang: id-ID
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /:title/
+
+author: "Tim Redaksi INFOKILAS"
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "Tim Redaksi INFOKILAS"
+      hide_buttons: true
