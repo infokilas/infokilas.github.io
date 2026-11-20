@@ -1,8 +1,35 @@
+
 <!doctype html>
 <html lang="id">
-{% include head.html %}
+<head>
+  {% include head.html %}
+</head>
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-icon">I<span>K</span></span><span><strong>INFOKILAS</strong><small>INFORMASI · TEKNOLOGI · HIBURAN DIGITAL</small></span></a><nav><a href="{{ '/' | relative_url }}">Beranda</a><a href="{{ '/arsip/' | relative_url }}">Arsip</a><a href="{{ '/tentang/' | relative_url }}">Tentang</a></nav></div></header>
-<main class="container">{{ content }}</main>
-<footer class="footer"><div class="container"><strong>INFOKILAS</strong><p>Informasi dan wawasan digital untuk pembaca Indonesia.</p><small>© {{ 'now' | date: '%Y' }} INFOKILAS. Semua hak dilindungi.</small></div></footer>
-</body></html>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <img
+        src="{{ '/assets/images/logo-infokilas.png' | relative_url }}"
+        alt="INFOKILAS - Portal Berita"
+        style="width:240px;max-width:100%;height:auto;">
+    </a>
+
+  </div>
+</header>
+
+<main class="container">
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <strong>INFOKILAS</strong>
+    <p>Informasi dan wawasan digital terkini.</p>
+    <p>&copy; {{ site.time | date: '%Y' }} INFOKILAS</p>
+  </div>
+</footer>
+
+</body>
+</html>
