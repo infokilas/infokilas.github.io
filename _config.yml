@@ -1,6 +1,6 @@
-title: "INFOKILAS"
-description: "Portal informasi, teknologi, dan hiburan digital terkini."
-url: "https://infokilas.github.io"
+title: INFOKILAS
+description: Berita, teknologi, hiburan, dan gaya hidup.
+url: https://infokilas.github.io
 baseurl: ""
 lang: id-ID
 timezone: Asia/Jakarta
@@ -10,15 +10,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
-      author: "Tim Redaksi INFOKILAS"
+      author: Tim Redaksi INFOKILAS
       hide_buttons: true
+exclude:
+  - README.md
