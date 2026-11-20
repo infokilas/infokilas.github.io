@@ -1,9 +1,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO JEKYLL -->
 {% seo %}
+
+<!-- GOOGLE DISCOVER & INDEXING -->
 <meta name="robots" content="max-image-preview:large">
+
+<!-- CSS UTAMA INFOKILAS -->
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<meta name="google-site-verification" content="XrEdpj3scxzkps_2U0HpBMau-KzvNKWf7DcsJlytHwE" />
+
+<!-- GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="XrEdpj3scxzkps_2U0HpBMau-KzvNKWf7DcsJlytHwE">
+
+<!-- FAVICON INFOKILAS -->
 <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-infokilas.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/images/favicon-infokilas.png' | relative_url }}">
 
+<!-- LARGE IMAGE PREVIEW FOR ARTICLES -->
+{% if page.layout == 'post' and page.image %}
+<meta name="twitter:card" content="summary_large_image">
+{% endif %}
