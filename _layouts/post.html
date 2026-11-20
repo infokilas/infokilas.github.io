@@ -1,9 +1,56 @@
+
 ---
 layout: default
 ---
+
 <article class="article-page">
-<header class="article-header"><div class="eyebrow">{{ page.categories | first | default: 'Artikel' }}</div><h1>{{ page.title }}</h1><p class="article-meta">{{ page.date | date: '%d-%m-%Y' }} · {{ page.author | default: site.title }}</p></header>
-{% if page.image %}<img class="article-hero" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" width="1200" height="675">{% endif %}
-<div class="article-body">{{ content }}</div>
-{% unless page.hide_buttons %}<div class="article-actions"><a class="archive-button" href="{{ '/arsip/' | relative_url }}">Lihat Artikel Lainnya</a></div>{% endunless %}
+
+  <!-- HEADER ARTIKEL -->
+  <header class="article-header">
+
+    {% if page.categories and page.categories.size > 0 %}
+    <div class="eyebrow">
+      {{ page.categories | first }}
+    </div>
+    {% endif %}
+
+    <h1>{{ page.title | escape }}</h1>
+
+    <p class="article-meta">
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+        {{ page.date | date: '%d %B %Y' }}
+      </time>
+      · {{ page.author | default: 'Tim Redaksi INFOKILAS' | escape }}
+    </p>
+
+  </header>
+
+  <!-- BANNER ARTIKEL -->
+  {% if page.image %}
+  <img
+    class="article-hero"
+    src="{{ page.image | relative_url }}"
+    alt="{{ page.title | escape }}"
+    width="1200"
+    height="675"
+    fetchpriority="high"
+    decoding="async">
+  {% endif %}
+
+  <!-- ISI ARTIKEL -->
+  <div class="article-body">
+    {{ content }}
+  </div>
+
+  <!-- TOMBOL ARTIKEL LAINNYA -->
+  {% unless page.hide_buttons %}
+  <div class="article-actions">
+    <a
+      class="archive-button"
+      href="{{ '/arsip/' | relative_url }}">
+      Lihat Artikel Lainnya
+    </a>
+  </div>
+  {% endunless %}
+
 </article>
