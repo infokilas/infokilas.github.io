@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zodiak Libra dan Simbol Keseimbangan dalam Mahjong Digital Menghadirkan Perspektif Hiburan yang Berbeda"
-date: 2026-11-25 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Zodiak Libra dapat dibaca sebagai inspirasi naratif tentang keseimbangan ketika dipadukan dengan komposisi simetris dalam desain mahjong digital."
 image: "/assets/images/banner-mahjong7.jpg"

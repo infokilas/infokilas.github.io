@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perkembangan Mahjong Ways di Era Smartphone Mengubah Cara Generasi Muda Mengenal Hiburan Digital"
-date: 2026-11-28 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Mahjong Ways hadir dalam ekosistem hiburan berbasis smartphone yang menuntut tampilan responsif, navigasi jelas, dan pengalaman visual ringkas."
 image: "/assets/images/banner-mahjong10.jpg"

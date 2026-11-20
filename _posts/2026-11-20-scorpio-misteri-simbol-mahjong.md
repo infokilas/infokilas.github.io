@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zodiak Scorpio dan Misteri Simbol Mahjong Menjadi Inspirasi Cerita Visual dalam Permainan Modern"
-date: 2026-11-29 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Zodiak Scorpio sering diasosiasikan dengan misteri dalam budaya populer sehingga menarik sebagai inspirasi atmosfer visual bagi karya digital bertema mahjong."
 image: "/assets/images/banner-mahjong11.jpg"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tren Mahjong di Media Sosial Membuktikan Daya Tarik Permainan Tradisional dalam Era Digital"
-date: 2026-11-26 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Percakapan tentang mahjong di media sosial menunjukkan bagaimana sebuah permainan tradisional dapat hadir kembali melalui video pendek, ilustrasi, dan komunitas digital."
 image: "/assets/images/banner-mahjong8.jpg"

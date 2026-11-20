@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengapa Mahjong Digital Semakin Populer di Kalangan Anak Muda yang Menyukai Hiburan Visual Modern?"
-date: 2026-11-21 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Mahjong digital menarik perhatian sebagian anak muda karena memadukan ikon tradisional, animasi berwarna, dan pengalaman layar yang mudah dikenali."
 image: "/assets/images/banner-mahjong3.jpg"

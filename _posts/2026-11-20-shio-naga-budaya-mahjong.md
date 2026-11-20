@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Filosofi Shio Naga dalam Budaya Mahjong dan Pengaruhnya terhadap Desain Permainan Digital Modern"
-date: 2026-11-23 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Shio Naga menjadi salah satu sumber inspirasi visual dalam desain mahjong digital karena citranya berkaitan dengan kekuatan dan kemegahan dalam sejumlah tradisi Tiongkok."
 image: "/assets/images/banner-mahjong5.jpg"

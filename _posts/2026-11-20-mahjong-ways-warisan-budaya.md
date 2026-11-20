@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mahjong Ways Menggabungkan Warisan Budaya Tiongkok dengan Teknologi Animasi yang Menarik Perhatian Anak Muda"
-date: 2026-11-24 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Mahjong Ways menggunakan bahasa visual yang mengingatkan pada warisan mahjong Tiongkok sekaligus memanfaatkan pendekatan grafis yang lazim pada hiburan digital modern."
 image: "/assets/images/banner-mahjong6.jpg"

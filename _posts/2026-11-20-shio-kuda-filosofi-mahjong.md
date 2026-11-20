@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengenal Filosofi Shio Kuda dan Simbol Keberuntungan dalam Perkembangan Mahjong Bertema Oriental"
-date: 2026-11-27 09:00:00 +0700
+date: 2026-11-20 09:00:00 +0700
 categories: [General]
 description: "Shio Kuda menawarkan inspirasi cerita mengenai energi dan gerak dalam ilustrasi mahjong bertema oriental, tanpa menentukan hasil suatu permainan."
 image: "/assets/images/banner-mahjong9.jpg"
