@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "QRIS dan Mahjong Digital: Memahami Perubahan Pembayaran dalam Hiburan Modern"
