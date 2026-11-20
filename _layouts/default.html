@@ -1,11 +1,54 @@
+
 <!doctype html>
-<html lang="id">
-<head>{% include head.html %}</head>
+<html lang="{{ site.lang | default: 'id-ID' }}">
+<head>
+  {% include head.html %}
+</head>
+
 <body>
-<header class="site-header"><div class="container header-inner">
-<a class="site-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo-infokilas.png' | relative_url }}" alt="INFOKILAS" width="270" height="80"></a>
-<nav class="site-nav" aria-label="Navigasi utama"><a href="{{ '/arsip/' | relative_url }}">Semua Artikel</a><a href="{{ '/' | relative_url }}">Beranda</a></nav>
-</div></header>
-<main class="container site-main">{{ content }}</main>
-<footer class="site-footer"><div class="container"><strong>INFOKILAS</strong><p>Informasi, teknologi, hiburan, dan gaya hidup.</p><small>&copy; {{ site.time | date: '%Y' }} INFOKILAS</small></div></footer>
-</body></html>
+
+  <!-- HEADER INFOKILAS -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- LOGO -->
+      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="INFOKILAS - Beranda">
+        <img
+          src="{{ '/assets/images/logo-infokilas.png' | relative_url }}"
+          alt="INFOKILAS"
+          width="270"
+          height="80">
+      </a>
+
+      <!-- NAVIGASI -->
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="{{ '/arsip/' | relative_url }}">Semua Artikel</a>
+        <a href="{{ '/' | relative_url }}">Beranda</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main id="main-content" class="container site-main">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <strong>INFOKILAS</strong>
+
+      <p>Informasi, teknologi, hiburan, dan gaya hidup.</p>
+
+      <small>
+        &copy; {{ site.time | date: '%Y' }} INFOKILAS.
+        Semua hak dilindungi.
+      </small>
+
+    </div>
+  </footer>
+
+</body>
+</html>
