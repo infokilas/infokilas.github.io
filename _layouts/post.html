@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-<article class="article">
-  <div class="eyebrow">{% for category in page.categories %}{{ category }}{% unless forloop.last %} · {% endunless %}{% endfor %}</div>
-  <h1>{{ page.title }}</h1>
-  <div class="meta">{{ page.author | default: site.author }} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time></div>
-  {% if page.image %}<img class="hero" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" width="1200" height="675">{% endif %}
-  <div class="article-body">{{ content }}</div>
-  {% unless page.hide_buttons %}<div class="actions"><a href="{{ '/' | relative_url }}">Kembali ke beranda</a></div>{% endunless %}
-  <div class="article-bottom"><a href="{{ '/' | relative_url }}">← Lihat artikel lainnya</a></div>
+<article class="article-page">
+<header class="article-header"><p class="eyebrow">{{ page.categories | first | default: 'Artikel' }}</p><h1>{{ page.title }}</h1><p class="article-meta">{{ page.date | date: '%d-%m-%Y' }} · {{ page.author | default: site.author }}</p></header>
+{% if page.image %}<img class="article-hero" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" width="1200" height="675">{% endif %}
+<div class="article-body">{{ content }}</div>
+{% unless page.hide_buttons %}<div class="article-actions"><a href="{{ '/' | relative_url }}">Kembali ke Beranda</a></div>{% endunless %}
 </article>
