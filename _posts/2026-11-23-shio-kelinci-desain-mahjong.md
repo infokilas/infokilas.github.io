@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shio Kelinci dan Filosofi Kelembutan dalam Desain Karakter Mahjong Digital"
-date: 2026-11-23 19:45:00 +0700
+date: 2026-11-23 19:15:00 +0700
 categories: [General]
 description: "Shio Kelinci menghadirkan asosiasi kelembutan dan ketelitian yang dapat diterjemahkan menjadi pendekatan desain karakter mahjong digital."
 image: "/assets/images/banner-mahjong55.jpg"

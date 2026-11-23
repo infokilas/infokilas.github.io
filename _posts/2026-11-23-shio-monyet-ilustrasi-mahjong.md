@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengenal Shio Monyet dan Simbol Kreativitas dalam Ilustrasi Mahjong Modern"
-date: 2026-11-23 21:00:00 +0700
+date: 2026-11-23 19:00:00 +0700
 categories: [General]
 description: "Shio Monyet sering dipakai sebagai metafora kecerdikan dan kreativitas yang menarik untuk dikaji dalam ilustrasi mahjong modern."
 image: "/assets/images/banner-mahjong60.jpg"

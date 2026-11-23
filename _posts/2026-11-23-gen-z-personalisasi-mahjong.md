@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Generasi Z dan Tren Personalisasi Tampilan Mahjong Digital di Perangkat Mobile"
-date: 2026-11-23 20:45:00 +0700
+date: 2026-11-23 19:35:00 +0700
 categories: [General]
 description: "Generasi Z terbiasa dengan antarmuka yang dapat dipersonalisasi, sebuah tren yang juga memengaruhi cara mahjong digital dirancang dan dibicarakan."
 image: "/assets/images/banner-mahjong59.jpg"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mitos Hoki dalam Mahjong Digital dan Cara Otak Mengenali Pola Visual"
-date: 2026-11-23 21:15:00 +0700
+date: 2026-11-23 19:15:00 +0700
 categories: [General]
 description: "Mitos hoki dalam mahjong digital dapat dipahami melalui kecenderungan otak mencari pola dan memberi makna pada kejadian yang sebenarnya acak."
 image: "/assets/images/banner-mahjong61.jpg"

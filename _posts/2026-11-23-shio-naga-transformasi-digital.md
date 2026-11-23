@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shio Naga dan Transformasi Simbol Kekuatan dalam Permainan Mahjong Digital"
-date: 2026-11-23 20:30:00 +0700
+date: 2026-11-23 19:30:00 +0700
 categories: [General]
 description: "Shio Naga merupakan simbol budaya yang kaya tafsir dan terus menemukan bentuk baru dalam ilustrasi permainan mahjong digital."
 image: "/assets/images/banner-mahjong58.jpg"

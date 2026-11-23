@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Psikologi Warna Biru dan Emas pada Mahjong Ways dalam Pengalaman Visual Pengguna"
-date: 2026-11-23 20:00:00 +0700
+date: 2026-11-23 19:00:00 +0700
 categories: [General]
 description: "Mahjong Ways menggunakan bahasa warna yang dapat dibaca melalui psikologi persepsi, terutama ketika biru dan emas tampil berdampingan."
 image: "/assets/images/banner-mahjong56.jpg"

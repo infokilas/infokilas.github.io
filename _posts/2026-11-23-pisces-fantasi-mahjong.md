@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zodiak Pisces dan Imajinasi Fantasi dalam Perkembangan Desain Mahjong Digital"
-date: 2026-11-23 20:15:00 +0700
+date: 2026-11-23 19:15:00 +0700
 categories: [General]
 description: "Zodiak Pisces memberi inspirasi pada tema fantasi yang dapat memperkaya ilustrasi dan atmosfer mahjong digital tanpa harus dipahami sebagai ramalan."
 image: "/assets/images/banner-mahjong57.jpg"
