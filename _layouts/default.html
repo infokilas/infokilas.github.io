@@ -12,30 +12,122 @@
     <div class="container header-inner">
 
       <!-- LOGO -->
-      <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="INFOKILAS - Beranda">
+      <a class="site-brand"
+         href="{{ '/' | relative_url }}"
+         aria-label="INFOKILAS - Beranda">
+
         <img
           src="{{ '/assets/images/logo-infokilas.png' | relative_url }}"
           alt="INFOKILAS"
-          width="270"
-          height="80">
+          width="300"
+          height="90">
+
       </a>
 
-      <!-- NAVIGASI -->
+      <!-- NAVIGASI UTAMA -->
       <nav class="site-nav" aria-label="Navigasi utama">
-        <a href="{{ '/arsip/' | relative_url }}">Semua Artikel</a>
-        <a href="{{ '/' | relative_url }}">Beranda</a>
+
+        <a href="{{ '/' | relative_url }}"
+           class="nav-button {% if page.url == '/' %}active{% endif %}"
+           {% if page.url == '/' %}aria-current="page"{% endif %}>
+
+          <svg width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M3 10L12 3L21 10"/>
+            <path d="M5 9V21H19V9"/>
+            <path d="M9 21V13H15V21"/>
+          </svg>
+
+          <span>Beranda</span>
+
+        </a>
+
+        <a href="{{ '/arsip/' | relative_url }}"
+           class="nav-button {% if page.url == '/arsip/' %}active{% endif %}"
+           {% if page.url == '/arsip/' %}aria-current="page"{% endif %}>
+
+          <svg width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <rect x="4" y="3" width="16" height="18" rx="2"/>
+            <path d="M8 7H16M8 11H16M8 15H13"/>
+          </svg>
+
+          <span>Semua Artikel</span>
+
+        </a>
+
+        <!-- TOMBOL PENCARIAN -->
+        <button
+          type="button"
+          class="search-toggle"
+          id="search-toggle"
+          aria-label="Cari artikel"
+          aria-expanded="false"
+          aria-controls="site-search">
+
+          <svg width="23" height="23" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5"/>
+            <path d="M16 16L21 21"/>
+          </svg>
+
+        </button>
+
       </nav>
 
     </div>
+
+    <!-- PANEL PENCARIAN -->
+    <div class="site-search" id="site-search" hidden>
+
+      <div class="container search-inner">
+
+        <form action="https://www.google.com/search"
+              method="get"
+              role="search"
+              class="search-form">
+
+          <input
+            type="hidden"
+            name="sitesearch"
+            value="infokilas.github.io">
+
+          <input
+            type="search"
+            name="q"
+            id="search-input"
+            placeholder="Cari artikel di INFOKILAS..."
+            aria-label="Cari artikel di INFOKILAS"
+            required>
+
+          <button type="submit">
+            Cari Artikel
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
   </header>
 
   <!-- KONTEN UTAMA -->
   <main id="main-content" class="container site-main">
+
     {{ content }}
+
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
+
     <div class="container">
 
       <strong>INFOKILAS</strong>
@@ -48,7 +140,46 @@
       </small>
 
     </div>
+
   </footer>
+
+  <!-- SCRIPT PENCARIAN -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const toggle = document.getElementById('search-toggle');
+      const panel = document.getElementById('site-search');
+      const input = document.getElementById('search-input');
+
+      if (!toggle || !panel || !input) return;
+
+      toggle.addEventListener('click', function () {
+
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        panel.hidden = isOpen;
+
+        if (!isOpen) {
+          input.focus();
+        }
+
+      });
+
+      document.addEventListener('keydown', function (event) {
+
+        if (event.key === 'Escape' && !panel.hidden) {
+
+          panel.hidden = true;
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.focus();
+
+        }
+
+      });
+
+    });
+  </script>
 
 </body>
 </html>
