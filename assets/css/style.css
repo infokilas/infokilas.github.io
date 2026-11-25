@@ -105,6 +105,9 @@ button {
   max-height: 90px;
   height: auto;
   object-fit: contain;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 /* ==========================================
